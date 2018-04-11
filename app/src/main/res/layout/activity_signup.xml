@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:contentDescription="@string/background_desc"
+            android:background="@drawable/background_spcf"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <ImageView
+            android:contentDescription="@string/background_desc"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:text="@string/lblFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/tvFirstName"
+            android:hint="@string/lblFirstName"
+            android:drawablePadding="20dp"
+            android:drawableEnd="@drawable/ic_person"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/lblLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/tvLastName"
+            android:hint="@string/lblLastName"
+            android:drawablePadding="20dp"
+            android:drawableEnd="@drawable/ic_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="" />
+        <TextView
+            android:text="@string/lblUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="@string/lblUsername"
+            android:id="@+id/tvUsername"
+            android:drawablePadding="20dp"
+            android:drawableEnd="@drawable/ic_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="" />
+        <TextView
+            android:text="@string/lblPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/tvPassword"
+            android:hint="@string/lblPassword"
+            android:drawablePadding="20dp"
+            android:drawableEnd="@drawable/ic_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/btnSignUp"
+            android:background="@drawable/rec_gradient"
+            android:textColor="#FFF"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false"
+            android:text="@string/btnSignup"
+            android:onClick="submitData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
