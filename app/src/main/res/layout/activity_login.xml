@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    tools:context=".LoginActivty">
+        
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,8 +28,8 @@
                 android:layout_height="0dp" />
         </LinearLayout>
 
+        <!--- layoutLoginContent -->
         <LinearLayout
-            android:id="@+id/layoutInput"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:layout_centerVertical="true"
@@ -76,19 +77,21 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="@dimen/activity_vertical_margin">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="end">
 
         <android.support.design.widget.FloatingActionButton
             android:src="@drawable/ic_action_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|end"
+            app:borderWidth="0dp"
             app:elevation="4dp"
-            app:backgroundTint="@color/colorRed"/>
+            app:backgroundTint="@color/colorRed"
+            android:id="@+id/btnFab"/>
+    </LinearLayout>
 
-    </RelativeLayout>
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>
