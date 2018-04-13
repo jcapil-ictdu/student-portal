@@ -33,4 +33,10 @@ public class SignupActivity extends AppCompatActivity {
         new Ajax(this, fname.getText().toString(), lname.getText().toString(), user.getText().toString(), pwd.getText().toString()).execute();
     }
 
+    @Override
+    public void onBackPressed() {
+        finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
 }

@@ -16,7 +16,7 @@
             android:orientation="vertical">
             <ImageView
                 android:contentDescription="@string/background_desc"
-                android:background="@drawable/background_spcf"
+                android:background="@drawable/background_spcf_b"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp" />
@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp" />
         </LinearLayout>
-        
+
         <LinearLayout
             android:id="@+id/layoutInput"
             android:layout_marginRight="20dp"

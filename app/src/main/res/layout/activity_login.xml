@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".LoginActivty">
-        
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -17,7 +18,7 @@
 
             <ImageView
                 android:contentDescription="@string/background_desc"
-                android:background="@drawable/background_spcf"
+                android:background="@drawable/background_spcf_a"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp" />
@@ -75,23 +76,24 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="40dp">
+
+            <Button
+                android:background="@drawable/rec_gradient_signup"
+                android:textColor="#FFF"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="false"
+                android:text="@string/btnCreateanAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCreateanAccount" />
+
+        </LinearLayout>
+
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="end">
-
-        <android.support.design.widget.FloatingActionButton
-            android:src="@drawable/ic_action_add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            app:borderWidth="0dp"
-            app:elevation="4dp"
-            app:backgroundTint="@color/colorRed"
-            android:id="@+id/btnFab"/>
-    </LinearLayout>
-
-</RelativeLayout>
+</ScrollView>

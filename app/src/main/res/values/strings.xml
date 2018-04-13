@@ -7,5 +7,6 @@
     <string name="lblUsername">Username</string>
     <string name="lblPassword">Password</string>
     <string name="btnSignup">Sign Up</string>
+    <string name="btnCreateanAccount">Create an account</string>
     <string name="btnLogin">Login</string>
 </resources>
